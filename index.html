@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
+    <link href="/JS/jquery/jquery.fancybox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+
+                <div class="header__logo">
+                    <a href="#">
+                        <img class="header__logo-img" src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__links hidden-links">
+                    <ul class="menu__box">
+                        <li class="header__linking"><a class="menu__item link-usually" href="#">О доме</a></li>
+                        <li class="header__linking"><a class="menu__item link-usually" href="#">На территории</a></li>
+                        <li class="header__linking open"><a class="menu__item nav-link open" href="#">Забронировать</a>
+                        </li>
+                        <li class="header__linking"><a class="menu__item link-usually" href="#">Видеогалерея</a></li>
+                        <li class="header__linking"><a class="menu__item link-usually" href="#">Контакты</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="header__tel">
+                    <a class="header_write-phone" href="tel:+79991114414"> +7 (999) 111 44-14 </a>
+                    <a data-fancybox data-src="#dialog-content" class="header_write-link open">заказать звонок</a>
+                </div>
+                <div class="header__couple-image">
+                    <div class="header__phone-icon">
+                        <a data-fancybox data-src="#dialog-content"><img class="header__icon-image" src="./img/icons/phone.png"></a>
+                    </div>
+                    <!----------------------------------------------->
+                    <!--                 BURGER MENU               -->
+                    <!----------------------------------------------->
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a class="menu__item link-usually dark-blue" href="#">О доме</a></li>
+                <li><a class="menu__item link-usually" href="#">На територии дома</a></li>
+                <li><a class="menu__item link-usually open" href="#">Забронировать</a></li>
+                <li><a class="menu__item link-usually" href="#">Видеогалерея</a></li>
+                <li><a class="menu__item link-usually" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!----------------------------------------------->
+    <!--                BURGER MENU                -->
+    <!----------------------------------------------->
+    <main class="main">
+        <section class="hero">
+            <div class="hero__swiper swiper">
+                <div class="hero__wrapper swiper-wrapper">
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/01.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/02.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/03.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/04.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/05.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/06.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/07.jpg">
+                    </div>
+                    <div class="swiper-slide h-540">
+                        <img class="mx-100" src="./img/swiper/08.jpg">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </section>
+        <section class="booking">
+            <div class="container">
+                <div class="booking__wrapper">
+
+                    <div class="booking-div shield">
+                        <h3 class="booking-title__h3">Бронирование</h3>
+                    </div>
+                    <div class="booking-div interface">
+                        <input class="interface-input" placeholder="Заезд">
+                    </div>
+                    <div class="booking-div interface">
+                        <input class="interface-input" placeholder="Выезд">
+                    </div>
+                    <div class="booking-div interface">
+                        <input class="interface-input" placeholder="Гости">
+                    </div>
+                    <div class="booking-div shield-button">
+                        <button class="button-shield">Забронировать</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="howse">
+            <div class="container">
+
+                <h1 class="howse-title"> О доме </h1>
+
+                <div class="content-howse">
+                    <div class="howse-fist__lert-div">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="mx-100" src="./img/rectangle_992.jpg">
+                                </div>
+                            </div>
+                            <div class="reviews-slider-pagination pagination-101"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="howse-fist__right-div">
+                        <div class="howse-first__button">участок <br><span> 9 соток </span></div>
+                        <div class="howse-first__button">санузел <br><span>В доме 2</span></div>
+                        <div class="howse-first__button">общая площадь <br><span>455м2</span></div>
+                        <div class="howse-first__button">коммникации <br><span>Все</span></div>
+                        <div class="howse-first__button">этажей в доме <br><span>2</span></div>
+                        <div class="howse-first__button">ИНТЕРНЕТ и ТВ <br><span>Wi-Fi, телевизор</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comfort">
+            <div class="container">
+                <div class="comfort__box">
+
+                    <h1 class="comfort__h1">На территории дома</h1>
+                    <div class="comfort__container">
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Бассейн</h3>
+                            <div class="comfort__cold-gas">
+
+                                <div class="comfort__wrapper">
+
+                                    <img class="comfort__image" src="./img/in_howse_01.jpg" alt="">
+                                </div>
+                                <p class="comfort__text">Длинна 1,7м и ширина 1,5м.</p>
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Баня</h3>
+                            <div class="comfort__cold-gas">
+
+                                <div class="comfort__wrapper">
+
+                                    <img class="comfort__image" src="./img/in_howse_02.jpg" alt="">
+                                </div>
+
+                                <p class="comfort__text">Полотенца предоставляются</p>
+
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Сибирский чан</h3>
+                            <div class="comfort__cold-gas">
+
+                                <div class="comfort__wrapper">
+
+                                    <img class="comfort__image" src="./img/in_howse_03.jpg" alt="">
+                                </div>
+                                <p class="comfort__text">Внешний диаметр 2350 мм, внутренний - 2250 мм, толщина стенки
+                                    2-3
+                                    мм.
+                                </p>
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Пруд с рыбками</h3>
+                            <div class="comfort__cold-gas">
+
+
+                                <div class="comfort__wrapper">
+
+                                    <img class="comfort__image" src="./img/in_howse_04.jpg" alt="">
+                                </div>
+                                <p class="comfort__text">Можно ловить и готовить свежую рыбу</p>
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Мангальная зона</h3>
+                            <div class="comfort__cold-gas">
+
+                                <div class="comfort__wrapper">
+
+                                    <img class="comfort__image" src="./img/in_howse_05.jpg" alt="">
+                                </div>
+                                <p class="comfort__text">Мангальная зона под навесом. Есть все необходимое шампура,
+                                    посуда.
+                                </p>
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                        <div class="comfort__element-item">
+                            <h3 class="comfort__title">Беседка</h3>
+                            <div class="comfort__cold-gas">
+
+                                <div class="comfort__wrapper">
+                                    <img class="comfort__image" src="./img/in_howse_06.jpg" alt="">
+                                </div>
+                                <p class="comfort__text">Беседка с камином и подсветкой</p>
+                            </div>
+                            <button class="comfort__button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="conditions">
+            <div class="container">
+                <div class="conditions_content">
+                    <h1 class="conditions_title title">Условия пребывания</h1>
+                    <div class="conditions_elements">
+                        <div class="conditions_items">
+                            <div class="conditions_img">
+                                <img class="conditions_images" src="./img/icons/people.png">
+                            </div>
+                            <div class="conditions_wrappers">
+
+                                <div class="conditions_item-title">
+                                    <p>Колличество гостей:</p>
+                                </div>
+                                <div class="conditions_text">8 и больше</div>
+                            </div>
+                        </div>
+                        <div class="conditions_items">
+
+                            <div class="conditions_img">
+
+                                <img class="conditions_images" src="./img/icons/dog.png">
+                            </div>
+                            <div class="conditions_wrappers">
+
+                                <div class="conditions_item-title">Можно с животными</div>
+                                <div class="conditions_text">Да, доплата 1000 за каждого</div>
+                            </div>
+                        </div>
+                        <div class="conditions_items">
+
+                            <div class="conditions_img">
+                                <img class="conditions_images" src="./img/icons/happines.png">
+                            </div>
+                            <div class="conditions_wrappers">
+
+                                <div class="conditions_item-title">Вечеринки <br> разрешены</div>
+                                <div class="conditions_text"></div>
+                            </div>
+                        </div>
+                        <div class="conditions_items">
+                            <div class="conditions_img">
+                                <img class="conditions_images" src="./img/icons/child.png">
+                            </div>
+                            <div class="conditions_wrappers">
+
+                                <div class="conditions_item-title">Можно с детьми</div>
+                                <div class="conditions_text">Да, конечно</div>
+                            </div>
+                        </div>
+                        <div class="conditions_items">
+
+                            <div class="conditions_img">
+                                <img class="conditions_images" src="./img/icons/smoke.png">
+                            </div>
+                            <div class="conditions_wrappers">
+
+                                <div class="conditions_item-title">Запрещено курить <br> в доме</div>
+                                <div class="conditions_text"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="beer__img">
+                <div class="container">
+                    <picture>
+                        <source media="(min-width: 768px) and (max-width: 1200px)" srcset="./img/Beer.png">
+                        <source media="(min-width: 1201px)" srcset="./img/Beer.png">
+                        <img src="./img/314401.png" alt="Unicorn Pool Float">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+
+                <h1 class="reviews_title">Отзывы о нас</h1>
+                <div class="reviews_customer">
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-tree">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper last-slider-carusel">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/mari.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Мария , 28 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Были семьёй , очень понравилось. Шикарный большой
+                                            бассейн и очень
+                                            уютная беседка. Вечерком сесть чаёк попить с видом на закат, ну просто
+                                            сказка</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo"> <img class="review_image-costumer"
+                                                src="./img/icons/anton.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Антон , 32 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Снимали домик с друзьми. Отлично провели время. Всё
+                                            необходимое
+                                            было,
+                                            а если что-то нужно хозяева всегда идут
+                                            на встречу.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/anna.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Анна , 50 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Сняли дом отпраздновать юбилей. Отлично посидели и места
+                                            всем
+                                            хватило. Дом очень большой. Оставались с ночевкой</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--NEXT SLIDE-->
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/mari.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Мария , 28 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Были семьёй , очень понравилось. Шикарный большой
+                                            бассейн и очень
+                                            уютная беседка. Вечерком сесть чаёк попить с видом на закат, ну просто
+                                            сказка</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo"> <img class="review_image-costumer"
+                                                src="./img/icons/anton.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Антон , 32 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Снимали домик с друзьми. Отлично провели время. Всё
+                                            необходимое
+                                            было,
+                                            а если что-то нужно хозяева всегда идут
+                                            на встречу.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/anna.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Анна , 50 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Сняли дом отпраздновать юбилей. Отлично посидели и места
+                                            всем
+                                            хватило. Дом очень большой. Оставались с ночевкой</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--NEXT SLIDE-->
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/mari.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Мария , 28 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Были семьёй , очень понравилось. Шикарный большой
+                                            бассейн и очень
+                                            уютная беседка. Вечерком сесть чаёк попить с видом на закат, ну просто
+                                            сказка</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo"> <img class="review_image-costumer"
+                                                src="./img/icons/anton.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Антон , 32 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Снимали домик с друзьми. Отлично провели время. Всё
+                                            необходимое
+                                            было,
+                                            а если что-то нужно хозяева всегда идут
+                                            на встречу.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews_squad">
+                                    <div class="reviews_element">
+                                        <div class="reviews_photo">
+                                            <img class="review_image-costumer" src="./img/icons/anna.png">
+                                        </div>
+                                        <div class="reviews_name">
+                                            <h3 class="reviews_naming">Анна , 50 лет</h3>
+                                        </div>
+                                    </div>
+                                    <div class="reviews_element">
+                                        <p class="reviews_text">Сняли дом отпраздновать юбилей. Отлично посидели и места
+                                            всем
+                                            хватило. Дом очень большой. Оставались с ночевкой</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--NEXT SLIDE-->
+                            <!-- ... -->
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-tree-pagination big-screen-off"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <!-- <div class="swiper-tree-button-prev"></div>
+                        <div class="swiper-tree-button-next"></div>    -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                    <!-- Slider main container -->
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="book">
+            <div class="container">
+                <div class="book_form-area">
+                    <div class="book_little-place">
+
+                        <h2 class="book_title">Забронировать дом</h2>
+                        <form class="form">
+
+                            <div class="book_first">
+
+                                <input type="text" class="form-input" placeholder="Имя">
+                            </div>
+                            <div class="book_booking">
+
+                                <input type="tel" class="form-input" placeholder="+7(___)___-___-__">
+                            </div>
+                            <div class="book_checked">
+                                <input type="checkbox" id="scales" name="scales" checked />
+                                <p class="book_text-checked">Даю согласие на обработку <a class="book_link" href="#">
+                                        персональных данных </a></a>
+                                </p>
+                            </div>
+
+                            <button class="book_button m-0-auto">Забронировать</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="modificate_footer">
+                    <div class="footer_house">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img class="footer_img-logo" src="./img/logo.svg">
+                            </a>
+                        </div>
+                        <div class="footer_number-box">
+                            <a class="footer_number" href="tel:+79991114414">+7 (999) 111-44-14</a>
+                        </div>
+                    </div>
+                    <div class="horisontal-line big-screen-off"></div>
+                    <div class="footer_menu">
+                        <div class="footer_left">
+                            <h3 class="footer_title-menu">Меню</h3>
+                            <ul class="footer_links">
+                                <li class="footer_linking"><a class="link_footer" href="#">О доме</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Правила дома</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_center">
+                            <ul class="footer_links">
+                                <li class="footer_linking"><a class="link_footer" href="#">Бассейн</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Баня</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Сибирский чан</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_right">
+                            <ul class="footer_links">
+                                <li class="footer_linking"><a class="link_footer" href="#">Пруд с рыбками</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Мангальная зона</a></li>
+                                <li class="footer_linking"><a class="link_footer" href="#">Беседка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_vertical-line"></div>
+                    <div class="footer_little-box">
+                        <div class="footer_couple">
+                            <div class="wrap big-screen-off">
+                                <div data-spollers class="block block_1">
+                                    <div class="block__item">
+                                        <button tabindex="-1" type="button" data-spoller
+                                            class="block__title footer_title-menu"> Меню
+                                        </button>
+                                        <div class="block__content">
+                                            <div class="block__text">
+
+                                                <nav class="footer_nav-menu">
+                                                    <ul class="footer_menu-ul">
+                                                        <li><a class="link-usually" href="#">О доме</a></li>
+                                                        <li><a class="link-usually" href="#">На територии дома</a></li>
+                                                        <li><a class="link-usually open" href="#">Забронировать</a></li>
+                                                        <li><a class="link-usually" href="#">Видеогалерея</a></li>
+                                                        <li><a class="link-usually" href="#">Контакты</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horisontal-line big-screen-off"></div>
+                        <div class="footer_contacts">
+                            <div class="footer_couple">
+
+                                <div class="wrap big-screen-off">
+                                    <div data-spollers class="block block_1">
+                                        <div class="block__item">
+
+                                            <div class="block__item">
+                                                <button tabindex="-1" type="button" data-spoller class="block__title">
+                                                    <h3 class="footer_title-menu">Контакты</h3>
+                                                </button>
+                                                <div class="block__content">
+                                                    <div class="block__text">
+                                                        <div class="footer_menu-last">
+                                                            <div class="footer_first">
+                                                                <div class="footer_image-place">
+                                                                    <a href="#">
+                                                                        <img class="footer_icon-image"
+                                                                            src="./img/icons/map.png">
+                                                                    </a>
+                                                                </div>
+                                                                <a class="footer_text-last" href="#">г. Москва, ул
+                                                                    Московская 22</a>
+                                                            </div>
+                                                            <div class="footer_booking">
+                                                                <div class="footer_image-place">
+                                                                    <a class="footer_text-last" href="mailto:mail@.ru">
+                                                                        <img class="footer_icon-image"
+                                                                            src="./img/icons/message.png">
+                                                                    </a>
+                                                                </div>
+                                                                <a class="footer_text-last"
+                                                                    href="mailto:mail@.ru">ivanov@yandex.ru</a>
+                                                            </div>
+                                                            <div class="footer_howse">
+                                                                <a href="https://web.telegram.org/k/">
+                                                                    <img class="footer_icon-image"
+                                                                        src="./img/icons/telegram.png">
+                                                                </a>
+                                                                <a href="https://web.whatsapp.com/">
+                                                                    <img class="footer_icon-image"
+                                                                        src="./img/icons/wats_up.png">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horisontal-line big-screen-off"></div>
+                            <div class="footer_menu-lasting off">
+                                <h3 class="footer_title-menu">Контакты</h3>
+                                <div class="footer_first">
+                                    <div class="footer_image-place">
+                                        <a href="#">
+                                            <img class="footer_icon-image" src="./img/icons/map.png">
+                                        </a>
+                                    </div>
+                                    <a class="footer_text-last" href="#">г. Москва, ул Московская 22</a>
+                                </div>
+                                <div class="footer_booking">
+                                    <div class="footer_image-place">
+                                        <a class="footer_text-last" href="mailto:mail@.ru">
+                                            <img class="footer_icon-image" src="./img/icons/message.png">
+                                        </a>
+                                    </div>
+                                    <a class="footer_text-last" href="mailto:mail@.ru">ivanov@yandex.ru</a>
+                                </div>
+                                <div class="footer_howse">
+                                    <a href="https://web.telegram.org/k/">
+                                        <img class="footer_icon-image" src="./img/icons/telegram.png">
+                                    </a>
+                                    <a href="https://web.whatsapp.com/">
+                                        <img class="footer_icon-image" src="./img/icons/wats_up.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horisontal-line"></div>
+                <div class="footer_div-content">
+                    <div class="footer_item-year">
+                        <p class="footer_data-create">© 2020-2023 «Твоя мечта».</p>
+                    </div>
+                    <div class="footer_link-logo">
+                        <div class="footer_create-site-link">
+                            <a class="footer_site-create" href="https://site-uper.ru/">Создание и продвижение
+                                сайтов</a>
+                        </div>
+                        <div class="footer_create-site-logo">
+                            <a class="footer_site-create" href="https://site-uper.ru/">
+                                <img class="footer_img-logo" src="./img/icons/site_upper.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </footer>
+
+    <script src="./JS/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+    <script src="./JS/burger.js"></script>
+    <script src="./JS/script.js"></script>
+
+    <div>
+
+        <div id="dialog-content" style="display:none;max-width:808px;" class="pr-355 bg_popup">
+            <div class="book_little-place">
+
+                <h2 class="book_title">Забронировать дом</h2>
+                <form class="form">
+
+                    <div class="book_first">
+
+                        <input type="text" class="form-input" placeholder="Имя">
+                    </div>
+                    <div class="book_booking">
+
+                        <input type="tel" class="form-input" placeholder="+7(___)___-___-__">
+                    </div>
+                    <div class="book_checked">
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <p class="book_text-checked">Даю согласие на обработку <a class="book_link" href="#">
+                                персональных данных </a></a>
+                        </p>
+                    </div>
+
+                    <button class="book_button m-0">Забронировать</button>
+
+                </form>
+            </div>
+        </div>
+          
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="/JS/jquery/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
